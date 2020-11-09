@@ -1,6 +1,22 @@
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<style>
+    model-viewer#reveal {
+      --poster-color: transparent;
+    }
+  </style>
+  <!-- Use it like any other HTML element -->
+  <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>3D Stone Examples</title>
+    <base href="">
 
-<!-- Use it like any other HTML element -->
-<model-viewer alt="A 3D model stone with logo." src="3dmodels/stone1.logo.glb" ></model-viewer>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="vbox" style="overflow: hidden;">
+    <model-viewer id="interaction" camera-controls loading="eager" reveal="interaction" alt="A 3D model of an astronaut." src="3dmodels/stone1.logo.glb" ></model-viewer>
+</body>
+</html>
